@@ -11,14 +11,14 @@ import Foundation
 
 public struct SeaKnifeKitRunner {
     
-    var projectPath: String
-    var arguments: [String]
-    var resultMethod: UInt8
+    public var projectPath: String
+    public var arguments: [String]
+    public var resultMethod: UInt8
     // resultMethods:
     //  0: piped output
     //  1: output file read
     
-    init(arguments: [String], resultMethod: UInt8, projectPath: String) {
+    public init(arguments: [String], resultMethod: UInt8, projectPath: String) {
         self.arguments = arguments
         self.resultMethod = resultMethod
         self.projectPath = projectPath
